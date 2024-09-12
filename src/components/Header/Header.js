@@ -19,7 +19,7 @@ export default function Header() {
     }) 
 
     return (
-        <header className="flex justify-between items-center bg-white rounded p-2">
+        <header className="flex justify-between items-center bg-white rounded p-6 h-[40px] md:h-[60px] md:p-6">
 
             <div className="flex justify-between items-center w-full lg:hidden">
                 <button onClick={toggleMenu} className="text-neutral-grey focus:outline-none">
@@ -88,7 +88,7 @@ export default function Header() {
                         <p className="text-black text-h6 font-semibold">Blog</p>
                     </li>
                     <li>
-                        <button className="bg-royalBlue text-white rounded px-4 py-2">Download</button>
+                        <button className="bg-royalBlue text-white text-h6 rounded px-4 py-2 h-[50px]">Download</button>
                     </li>
                 </ul>
             </nav>

@@ -2,6 +2,7 @@ import React from "react";
 import Herosection from "./Herosection/Herosection";
 import Footer from "../components/Footer/Footer";
 import OurApp from "./OurApp/OurApp";
+import AppFeatures from "./AppFeatures/AppFeatures";
 
 
 export default function Maquette2() {
@@ -11,6 +12,7 @@ export default function Maquette2() {
             <main className="flex-grow">
                 <Herosection/>
                 <OurApp/>
+                <AppFeatures/>
             </main>
         
 
