@@ -5,6 +5,7 @@ import OurApp from "./OurApp/OurApp";
 import AppFeatures from "./AppFeatures/AppFeatures";
 import AppInterface from "./AppInterface/AppInterface";
 import AppPerfectly from "./AppPerfectly/AppPerfectly";
+import OurTeams from "./OurTeams/OurTeams";
 
 
 export default function Maquette2() {
@@ -17,6 +18,7 @@ export default function Maquette2() {
                 <AppFeatures/>
                 <AppInterface/>
                 <AppPerfectly/> 
+                <OurTeams/>
             </main>
         
 

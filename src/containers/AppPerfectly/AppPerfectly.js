@@ -26,7 +26,7 @@ export default function AppPerfectly() {
 
             </div>
 
-            <div className="absolute top-[67%] w-full flex justify-center">
+            <div className="absolute top-[80%] md:top-[70%] lg:top-[67%] w-full flex justify-center">
                 <img src={Video} alt="Video" className="w-[343px] h-[150px] md:w-[570px] md:h-[231px] lg:w-[770px] lg:h-[319px]"/>
             </div>
 
