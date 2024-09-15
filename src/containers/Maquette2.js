@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer";
 import OurApp from "./OurApp/OurApp";
 import AppFeatures from "./AppFeatures/AppFeatures";
 import AppInterface from "./AppInterface/AppInterface";
+import AppPerfectly from "./AppPerfectly/AppPerfectly";
 
 
 export default function Maquette2() {
@@ -15,6 +16,7 @@ export default function Maquette2() {
                 <OurApp/>
                 <AppFeatures/>
                 <AppInterface/>
+                <AppPerfectly/> 
             </main>
         
 
