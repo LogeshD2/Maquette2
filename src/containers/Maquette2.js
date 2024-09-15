@@ -1,35 +1,22 @@
 import React from "react";
-import Herosection from "./Herosection/Herosection";
-import Footer from "../components/Footer/Footer";
-import OurApp from "./OurApp/OurApp";
-import AppFeatures from "./AppFeatures/AppFeatures";
-import AppInterface from "./AppInterface/AppInterface";
-import AppPerfectly from "./AppPerfectly/AppPerfectly";
-import OurTeams from "./OurTeams/OurTeams";
-import OurCustomers from "./OurCustomers/OurCustomers";
-import OurBlog from "./OurBlog/OurBlog";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./HOC/Layout/Layout";
+import HomePageLight from "./HomePageLight/HomePageLight";
+import BlogLight from "./BlogLight/BlogLight";
+import BlogDetails from "./BlogDetails/BlogDetails";
 
 
 export default function Maquette2() {
+
     return (
-        <div className="flex flex-col min-h-screen">
-            
-            <main className="flex-grow">
-                <Herosection/>
-                <OurApp/>
-                <AppFeatures/>
-                <AppInterface/>
-                <AppPerfectly/> 
-                <OurTeams/>
-                <OurCustomers/>
-                <OurBlog/>
-            </main>
-        
+        <Layout>
+            <Routes>
+                <Route path="/" element={<HomePageLight/>}/>
+                <Route path="/blog-light" element={<BlogLight/>}/>
+                <Route path="/blog-details" element={<BlogDetails/>}/>
 
-            <footer className="flex-shrink-0">
-                <Footer />
-            </footer>
-
-        </div>
+            </Routes>
+        </Layout>
     )
-} 
+
+}

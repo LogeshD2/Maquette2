@@ -12,7 +12,7 @@ export default function OurTeams() {
     return (
         <div className="flex flex-col items-center justify-center px-[16px] md:px-[40px] lg:px-[135px]">
 
-            <div className="flex flex-col items-center mt-[120px] lg:h-[477px] md:h-[402px]">
+            <div className="flex flex-col items-center mt-[120px]">
 
                 <h4 className="text-h5 text-black text-center w-[287px] h-[75px] mt-[60px] lg:mt-[120px] md:text-h4 md:font-bold md:w-[360px] md:h-[95px] lg:w-[625px] lg:h-[48px]">
                     OUR REATIVE TEAM
@@ -34,7 +34,7 @@ export default function OurTeams() {
             </div>
 
 
-            <div className="flex flex-col space-y-[30px] mb-[60px] md:space-x-[24px] md:space-y-0 lg:space-x-[30px] lg:space-y-0 md:flex-row md:mb-[120px]">
+            <div className="flex flex-col space-y-[30px] mt-[40px] mb-[60px] md:space-x-[24px] md:space-y-0 lg:space-x-[30px] lg:space-y-0 md:flex-row md:mb-[120px] md:mt-[32px] lg:mt-[60px]">
 
                 <div className="flex flex-col items-center justify-center w-[343px] h-[580px] md:w-[213px] md:h-[453px] lg:w-[343px] lg:h-[580px] rounded shadow">
                     <img src={Profile1} alt="Profile 1" className="w-[198px] h-[198px] md:w-[178px] md:h-[178px]"/>

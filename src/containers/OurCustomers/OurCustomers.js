@@ -25,7 +25,7 @@ export default function OurCustomers() {
     <section className="bg-customBackground bg-cover bg-center bg-no-repeat-100">
       <div className="flex flex-col items-center mt-[120px]">
 
-            <h4 className="text-h5 text-white text-center w-[287px] h-[75px] mt-[60px] lg:mt-[120px] md:text-h4 md:font-bold md:w-[360px] md:h-[95px] lg:w-[625px] lg:h-[48px]">
+            <h4 className="text-h5 text-white text-center w-[287px] mt-[60px] lg:mt-[120px] md:text-h4 md:font-bold md:w-[360px] lg:w-[625px] lg:h-[48px]">
                 OUR REATIVE TEAM
             </h4>
 
@@ -48,7 +48,7 @@ export default function OurCustomers() {
         <div className="flex items-center justify-center relative w-full">
           
           <div
-            className={`relative w-1/3 opacity-50 transform scale-90 transition-transform duration-500 ease-in-out -translate-x-8`}
+            className={`relative w-1/3 opacity-50 transform scale-90 transition-transform duration-500 ease-in-out -translate-x-8 hidden md:block`}
           >
             {prevIndex === 0 && (
               <div className="bg-white text-black rounded-lg p-6 shadow-lg">
@@ -153,7 +153,7 @@ export default function OurCustomers() {
 
           {/* Next testimonial - half hidden */}
           <div
-            className={`relative w-1/3 opacity-50 transform scale-90 transition-transform duration-500 ease-in-out translate-x-8`}
+            className={`relative w-1/3 opacity-50 transform scale-90 transition-transform duration-500 ease-in-out translate-x-8 hidden md:block`}
           >
             {nextIndex === 0 && (
               <div className="bg-white text-black rounded-lg p-6 shadow-lg">
