@@ -1,5 +1,5 @@
 import React from "react";
-import App from "../../assets/appfeatures/App.png";
+import App from "../../assets/herosection/Phone.png";
 import Browser from "../../assets/icons/Browser.png"
 import CellPhone from "../../assets/icons/CellPhone.png"
 import Comment from "../../assets/icons/Comment.png"

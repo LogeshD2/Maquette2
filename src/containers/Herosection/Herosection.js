@@ -45,7 +45,7 @@ export default function Herosection() {
                                 <p className="text-h6 text-black lg:text-h5 ">Download App Now</p>
                                 <div className="flex mt-4 space-x-4">
                                     <img src={GooglePlay} alt="Google Play" className="w-[109.64px] h-[32.68px] md:w-[149px] md:h-[47px]"/>
-                                    <img src={AppStore} alt="App Store" className="w-[108.19px] h-[34.13px] md:w-[141px] md:h-[45px]"/>
+                                    <img src={AppStore} alt="App Store" className="w-[108.19px] h-[34.13px] md:w-[151px] md:h-[45px]"/>
                                 </div>
                             </div>
                             

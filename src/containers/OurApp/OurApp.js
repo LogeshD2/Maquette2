@@ -7,17 +7,21 @@ export default function OurApp() {
     
     return (
         <div className="mt-20 px-[16px] md:px-[49px] lg:px-[161px]">
-            <h4 className="text-h5 text-black text-center md:text-h4 md:font-semibold">ABOUT OUR APP</h4>
 
-            <div className="text-center mx-auto mt-6 px-[22px] md:px-[120px] lg:px-[258px]">
-                <p className="text-h7 text-gray">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. 
-                </p>
-                <p className="text-h7 text-gray hidden lg:inline">
-                    Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
-                    Ullamcorper risus tempor, ac nunc libero urna, feugiat.
-                </p>
+            <div>
+                <h4 className="text-h5 text-black text-center md:text-h4 md:font-semibold">ABOUT OUR APP</h4>
+
+                <div className="text-center mx-auto mt-6 px-[22px] md:px-[120px] lg:px-[258px]">
+                    <p className="text-h7 text-gray">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. 
+                    </p>
+                    <p className="text-h7 text-gray hidden lg:inline">
+                        Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+                        Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                    </p>
+                </div>
             </div>
+            
 
             
 
