@@ -6,6 +6,8 @@ import AppFeatures from "./AppFeatures/AppFeatures";
 import AppInterface from "./AppInterface/AppInterface";
 import AppPerfectly from "./AppPerfectly/AppPerfectly";
 import OurTeams from "./OurTeams/OurTeams";
+import OurCustomers from "./OurCustomers/OurCustomers";
+import OurBlog from "./OurBlog/OurBlog";
 
 
 export default function Maquette2() {
@@ -19,6 +21,8 @@ export default function Maquette2() {
                 <AppInterface/>
                 <AppPerfectly/> 
                 <OurTeams/>
+                <OurCustomers/>
+                <OurBlog/>
             </main>
         
 
