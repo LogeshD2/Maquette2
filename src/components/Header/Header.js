@@ -1,98 +1,38 @@
-import React, { useEffect, useState } from "react";
-import Logo from "../../assets/logo/Logo.png";
+import React from "react";
+import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaHome} from 'react-icons/fa';
+import Navbar from "../NavBar/Navbar";
 
 
-export default function Header() {
-
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen)
-    }
-
-    useEffect(() => {
-        if(menuOpen) {
-            document.body.classList.add("overflow-hidden")
-        } else {
-            document.body.classList.remove("overflow-hidden")
-        }
-    }) 
+export default function Header(props) {
 
     return (
-        <header className="flex justify-between items-center bg-white rounded p-6 h-[40px] md:h-[60px] md:p-6">
+        <div className="bg-customBackground bg-cover bg-center bg-no-repeat px-[16px] md:px-[40px] lg:px-[135px] py-[35px]">
+                <div className="hidden md:flex md:items-center md:justify-between md:mb-4 lg:flex lg:items-center lg:justify-between lg:mb-4">
+                    <div className="flex items-center space-x-20">
+                        <div className="flex items-center space-x-4 justify-center ">
+                            <p className="text-white"><FaEnvelope/></p>
+                            <p className="text-white text-h7">Info@youremail.com</p>
+                        </div>
+                        <div className="flex items-center space-x-4 ">
+                            <p className="text-white"><FaPhone/></p>
+                            <p className="text-white text-h7">(480) 555-0103</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center space-x-6">
+                        <p className="text-white"><FaFacebookF/></p>
+                        <p className="text-white"><FaInstagram/></p>
+                        <p className="text-white"><FaTwitter/></p>
+                        <p className="text-white"><FaYoutube/></p>
+                    </div>
 
-            <div className="flex justify-between items-center w-full lg:hidden">
-                <button onClick={toggleMenu} className="text-neutral-grey focus:outline-none">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                <img src={Logo} alt="Appoly Logo"/>
-                <button className="bg-royalBlue text-white rounded px-4 py-2">Download</button>
-            </div>
-
-          
-
-            {menuOpen && (
-                <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-8 z-20 lg:hidden">
-                    <button onClick={toggleMenu} className="absolute top-4 right-4 text-black focus:outline-none">
-                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-
-                    <nav>
-                        <ul className="flex flex-col items-center justify-start space-y-6">
-                        <li className="text-h6 text-black">
-                            <p>Home</p>
-                        </li>
-                        <li className="text-h6 text-black">
-                            <p>Service</p>
-                        </li>
-                        <li className="text-h6 text-black">
-                            <p>Feature</p>
-                        </li>
-                        <li className="text-h6 text-black">
-                            <p>Product</p>
-                        </li>
-                        <li className="text-h6 text-black">
-                            <p>Testimonial</p>
-                        </li>
-                        <li className="text-h6 text-black">
-                            <p>FAQ</p>
-                        </li>
-                        </ul>
-                    </nav>
-                
                 </div>
-            )}
 
-            <nav className="w-full hidden lg:flex lg:items-center lg:justify-between ">
-                <ul className="flex items-center justify-between w-full pl-20">
-                    <li>
-                        <p className="text-royalBlue text-h6 font-semibold underline">Home</p>
-                    </li>
-                    <li>
-                        <p className="text-black text-h6 font-semibold">About</p>
-                    </li>
-                    <li>
-                        <p className="text-black text-h6 font-semibold">Features</p>
-                    </li>
-                    <li className="flex">
-                        <img src={Logo} alt="Appoly Logo"/>
-                    </li>
-                    <li>
-                        <p className="text-black text-h6 font-semibold">Screenshot</p>
-                    </li>
-                    <li>
-                        <p className="text-black text-h6 font-semibold">Blog</p>
-                    </li>
-                    <li>
-                        <button className="bg-royalBlue text-white text-h6 rounded px-4 py-2 h-[50px]">Download</button>
-                    </li>
-                </ul>
-            </nav>
-            
-        </header>
+                <div>
+                    <Navbar/>
+                </div>
+
+                <div>{props.children}</div>
+
+        </div>
     )
 }

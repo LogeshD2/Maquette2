@@ -18,11 +18,14 @@ module.exports = {
         colors: {
             white: '#ffffff',             
             gray: '#A9A9A9',    
-            black: '#000000',              
-            royalBlue: '#4169E1',         
+            black: '#232233',              
+            royalBlue: '#5956E9',         
         },
         backgroundImage: {
           'customBackground': "url('assets/background/BackgroundImage.png')",  
+        },
+        fontFamily: {
+          josefin: ['"Josefin Sans"', 'sans-serif'],
         },
       },
     },

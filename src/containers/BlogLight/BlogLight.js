@@ -7,6 +7,8 @@ import Image3 from "../../assets/bloglight/Image3.png";
 import Image4 from "../../assets/bloglight/Image4.png";
 import Image5 from "../../assets/bloglight/Image5.png";
 import RecentPost from "../../components/RecentPost/RecentPost";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 
 
@@ -15,39 +17,15 @@ export default function BlogLight() {
     return (
         <div>
 
-            <div className="bg-customBackground bg-cover bg-center bg-no-repeat px-[16px] md:px-[40px] lg:px-[135px] py-[35px]">
-                <div className="hidden md:flex md:items-center md:justify-between md:mb-4 lg:flex lg:items-center lg:justify-between lg:mb-4">
-                    <div className="flex items-center space-x-20">
-                        <div className="flex items-center space-x-4 justify-center ">
-                            <p className="text-white"><FaEnvelope/></p>
-                            <p className="text-white text-h7">Info@youremail.com</p>
-                        </div>
-                        <div className="flex items-center space-x-4 ">
-                            <p className="text-white"><FaPhone/></p>
-                            <p className="text-white text-h7">(480) 555-0103</p>
-                        </div>
+            <Header>
+                    <div className="flex flex-col items-center justify-center space-y-[18px]">
+                        <h2 className="text-h2 font-bold text-white mt-[75px]">BLOG</h2>
+                        <p className="flex items-center space-x-[10px] text-white">
+                            <FaHome className="w-[18px] h-[18px]"/>
+                            <p className="text-h7">Home/Blog</p>
+                        </p>
                     </div>
-                    <div className="flex items-center space-x-6">
-                        <p className="text-white"><FaFacebookF/></p>
-                        <p className="text-white"><FaInstagram/></p>
-                        <p className="text-white"><FaTwitter/></p>
-                        <p className="text-white"><FaYoutube/></p>
-                    </div>
-
-                </div>
-
-                <div>
-                    <Header/>
-                </div>
-
-                <div className="flex flex-col items-center justify-center space-y-[18px]">
-                    <h2 className="text-h2 font-bold text-white mt-[75px]">BLOG</h2>
-                    <p className="flex items-center space-x-[10px] text-white">
-                        <FaHome className="w-[18px] h-[18px]"/>
-                        <p className="text-h7">Home/Blog</p>
-                    </p>
-                </div>
-            </div>
+            </Header>
 
             <div className="flex space-x-[30px] px-[134px] mt-[120px]">
 
@@ -63,7 +41,9 @@ export default function BlogLight() {
                             interdum bibendum non tristique nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi suspendisse. 
                             Non morbi eleifend sit ac.
                         </p>
-                        <p className="text-royalBlue text-h6 underline self-start mt-[40px]">READ MORE</p> 
+                        <p className="text-royalBlue text-h6 underline self-start mt-[40px]">
+                            <Link to="/blog-details">READ MORE</Link> 
+                        </p>
                     </div>
 
                     <div className="w-[770px]">
@@ -138,7 +118,10 @@ export default function BlogLight() {
             </div>
 
 
-            
+            <div>
+                <Footer/>
+            </div>
+
         </div>
        
     )

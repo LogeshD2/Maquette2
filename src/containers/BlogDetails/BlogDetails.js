@@ -10,38 +10,15 @@ import Profile1 from "../../assets/blogdetails/Profile1.png";
 import Profile2 from "../../assets/blogdetails/Profile2.png";
 import Profile3 from "../../assets/blogdetails/Profile3.png";
 import RecentPost from "../../components/RecentPost/RecentPost";
+import Footer from "../../components/Footer/Footer";
 
 
 
 export default function BlogDetails() {
     
     return (
-        <div className="px">
-            <div className="bg-customBackground bg-cover bg-center bg-no-repeat px-[16px] md:px-[40px] lg:px-[135px] py-[35px]">
-                <div className="hidden md:flex md:items-center md:justify-between md:mb-4 lg:flex lg:items-center lg:justify-between lg:mb-4">
-                    <div className="flex items-center space-x-20">
-                        <div className="flex items-center space-x-4 justify-center ">
-                            <p className="text-white"><FaEnvelope/></p>
-                            <p className="text-white text-h7">Info@youremail.com</p>
-                        </div>
-                        <div className="flex items-center space-x-4 ">
-                            <p className="text-white"><FaPhone/></p>
-                            <p className="text-white text-h7">(480) 555-0103</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center space-x-6">
-                        <p className="text-white"><FaFacebookF/></p>
-                        <p className="text-white"><FaInstagram/></p>
-                        <p className="text-white"><FaTwitter/></p>
-                        <p className="text-white"><FaYoutube/></p>
-                    </div>
-
-                </div>
-
-                <div>
-                    <Header/>
-                </div>
-
+        <div>
+            <Header>
                 <div className="flex flex-col items-center justify-center space-y-[18px]">
                     <h2 className="text-h2 text-center font-bold text-white mt-[75px] w-[783px] ">The Snap Pixel: How It Works and How to Install</h2>
                     <p className="flex items-center space-x-[10px] text-white">
@@ -49,7 +26,9 @@ export default function BlogDetails() {
                         <p className="text-h7">Home/Blog/Blog details</p>
                     </p>
                 </div>
-            </div>
+            </Header>
+
+                
 
             <div className="flex space-x-[30px] px-[134px] mt-[120px]">
 
@@ -354,6 +333,10 @@ export default function BlogDetails() {
 
             </div>
 
+            <div>
+                <Footer />
+            </div>
+            
 
         </div>
     )

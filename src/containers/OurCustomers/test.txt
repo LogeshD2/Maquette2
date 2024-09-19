@@ -1,0 +1,57 @@
+// Carousel.js
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css'; 
+import 'slick-carousel/slick/slick-theme.css';
+
+const Carousel = () => {
+  const settings = {
+    centerMode: true,
+    centerPadding: '20%', // Ajustez pour contrôler la visibilité des côtés
+    slidesToShow: 1,
+    infinite: true,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: '15%',
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '10%',
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: '5%',
+        }
+      }
+    ]
+  };
+
+  return (
+    <div className="carousel-container">
+      <Slider {...settings}>
+        <div className="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1" className="carousel-image" />
+        </div>
+        <div className="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2" className="carousel-image" />
+        </div>
+        <div className="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3" className="carousel-image" />
+        </div>
+        <div className="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Slide+4" alt="Slide 4" className="carousel-image" />
+        </div>
+        {/* Ajoutez d'autres éléments si nécessaire */}
+      </Slider>
+    </div>
+  );
+};
+
+export default Carousel;

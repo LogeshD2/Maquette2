@@ -36,8 +36,8 @@ export default function OurTeams() {
 
             <div className="flex flex-col space-y-[30px] mt-[40px] mb-[60px] md:space-x-[24px] md:space-y-0 lg:space-x-[30px] lg:space-y-0 md:flex-row md:mb-[120px] md:mt-[32px] lg:mt-[60px]">
 
-                <div className="flex flex-col items-center justify-center w-[343px] h-[580px] md:w-[213px] md:h-[453px] lg:w-[343px] lg:h-[580px] rounded shadow">
-                    <img src={Profile1} alt="Profile 1" className="w-[198px] h-[198px] md:w-[178px] md:h-[178px]"/>
+            <div className="flex flex-col items-center justify-center w-[343px] h-[580px] md:w-[213px] md:h-[453px] lg:w-[343px] lg:h-[580px] rounded shadow">
+            <img src={Profile1} alt="Profile 1" className="w-[198px] h-[198px] md:w-[178px] md:h-[178px]"/>
                     <h4 className="text-h4 font-semibold mt-[77px] md:text-h6 md:font-normal md:mt-[11px] lg:text-h4 lg:font-semibold lg:mt-[77px]">CARLA PRESS</h4>
                     <h6 className="text-h6 text-gray md:text-h7 lg:text-h6">APP DEVELOPER</h6>
                     <p className="text-h7 text-gray text-center mt-[14px] md:mt-[18px] lg:mt-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</p>

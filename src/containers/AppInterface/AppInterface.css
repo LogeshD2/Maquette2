@@ -1,0 +1,115 @@
+/* AppInterface.css */
+
+/* Styles pour le carrousel */
+.carousel-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-image {
+    width: 245px;
+    height: 532px;
+    transition: all 0.3s ease;
+  }
+  
+  .slick-center .carousel-image {
+    width: 319px;
+    height: 622px;
+  }
+  
+  .slick-slide {
+    opacity: 1;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+  }
+  
+  .slick-dots {
+    bottom: -25px;
+    text-align: center;
+  }
+  
+  /* Styles pour les flèches personnalisées */
+  .slick-arrow {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #4169e1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: -50px;
+  }
+  
+  .slick-next {
+    right: -50px;
+  }
+  
+  @media (max-width: 768px) {
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
+  
+  /* Autres styles personnalisés */
+  .app-interface-container {
+    overflow-x: hidden;
+  }
+  
+  .bg-royalBlue {
+    background-color: #4169e1;
+  }
+  
+  .text-royalBlue {
+    color: #4169e1;
+  }
+  
+  .text-gray {
+    color: #6b7280; /* Gris standard de Tailwind */
+  }
+  
+  .rounded {
+    border-radius: 8px;
+  }
+  
+  /* Classes pour les tailles de texte (si vous n'utilisez pas Tailwind CSS) */
+  .text-h4 {
+    font-size: 2rem; /* 32px */
+  }
+  
+  .text-h5 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  .text-h6 {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  .text-h7 {
+    font-size: 1rem; /* 16px */
+  }
+  
+  /* Si vous utilisez Tailwind CSS, assurez-vous que les classes personnalisées sont prises en charge */
+  

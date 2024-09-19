@@ -1,5 +1,5 @@
 import React from "react";
-import App from "../../assets/herosection/Phone.png";
+import App from "../../assets/appfeatures/App.png";
 import Browser from "../../assets/icons/Browser.png"
 import CellPhone from "../../assets/icons/CellPhone.png"
 import Comment from "../../assets/icons/Comment.png"
@@ -44,7 +44,7 @@ export default function AppFeatures() {
 
             <img 
               src={App} alt="App"
-              className="w-[214px] h-[468px] order-4 block my-[60px] md:mx-[18px] lg:mx-[60px] lg:w-[375px] lg:h-[812px]"
+              className="w-[214px] h-[468px] order-4 block my-[60px] md:mx-[18px] lg:mx-[60px] lg:w-full lg:h-[812px]"
             />
 
             <div className="order-7 text-center mt-[59px] md:mt-0">

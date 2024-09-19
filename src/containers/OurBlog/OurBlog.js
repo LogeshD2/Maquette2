@@ -65,23 +65,33 @@ export default function OurBlog() {
 
             </div>
 
-            <div className="absolute top-[80%] md:top-[70%] lg:top-[90%] w-full flex justify-center mb-[1000px]">
-                <div className="flex items-center justify-around w-[343px] h-[310px] bg-white rounded shadow md:w-[658px] md:h-[150px] lg:w-[1170px] lg:h-[230px]">
-                    <div className="flex items-center space-x-4">
-                        <div className="bg-royalBlue p-3 rounded-full">
-                            <FaEnvelope className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] md:w-[40px] md:h-[40px] text-white"/>
+            <div className="mt-[200px] md:mt-[120px]">
+
+                <div className="absolute top-[93%] right-0 md:top-[93%] lg:top-[90%] w-full flex justify-center">
+                    <div className="flex flex-col items-center justify-start space-x-20 w-[343px] h-[310px] bg-white rounded shadow-2xl divide-x-4 md:flex-row md:w-[658px] md:h-[150px] lg:w-[1170px] lg:h-[230px]">
+                        
+                        <div className="flex items-center space-x-4">
+                            <div className="bg-royalBlue p-3 rounded-full">
+                                <FaEnvelope className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[40px] lg:h-[40px] text-white"/>
+                            </div>
+                            <p className="text-h6">info@youremail.com</p>
                         </div>
-                        <p className="text-h6">info@youremail.com</p>
-                    </div>
-                    <p>|</p>
-                    <div className="flex items-center space-x-4">
-                        <div className="bg-royalBlue p-3 rounded-full">
-                            <FaPhone className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] md:w-[40px] md:h-[40px] text-white"/>
+                        
+                       
+
+                        
+                        <div className="flex items-center space-x-4 pl-[50px]">
+                            <div className="bg-royalBlue p-3 rounded-full">
+                                <FaPhone className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[40px] lg:h-[40px] text-white"/>
+                            </div>
+                            <p className="text-h6">+880 321 655 9985</p>
                         </div>
-                        <p className="text-h6">+880 321 655 9985</p>
+
                     </div>
                 </div>
+
             </div>
+            
 
             
             

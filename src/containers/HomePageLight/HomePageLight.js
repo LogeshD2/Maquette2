@@ -23,6 +23,9 @@ export default function HomePageLight() {
                 <OurTeams/>
                 <OurCustomers/>
                 <OurBlog/>
+                <div className="pt-[220px] md:pt-[235px] bg-black">
+                    <Footer />
+                </div>
             </main>
 
         </div>
